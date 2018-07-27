@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+    <Folder Include="HealthChecks\" />
+    <Folder Include="Logs\" />
+    <Folder Include="Validators\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.8.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.2" />
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="CorrelationId" Version="2.1.0" />
+    <PackageReference Include="Destructurama.Attributed" Version="2.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="7.6.104" />
+    <PackageReference Include="HCF.Claims.Common.Utils" Version="1.0.3" />
+    <PackageReference Include="HCF.Common.Foundation.Api.Behaviors" Version="1.0.10" />
+    <PackageReference Include="HCF.Common.Foundation.Api.GlobalFilters" Version="1.0.8" />
+    <PackageReference Include="HCF.Common.Foundation.Api.HealthCheck" Version="1.0.4" />
+    <PackageReference Include="HCF.Common.Foundation.Api.Http" Version="1.0.3" />
+    <PackageReference Include="HCF.Common.Foundation.Api.Logging" Version="1.0.6" />
+    <PackageReference Include="HCF.Common.Foundation.Caching" Version="1.0.7" />
+    <PackageReference Include="HCF.Common.Foundation.CQRSExtensions" Version="1.0.1" />
+    <PackageReference Include="HCF.Common.Foundation.ExceptionHandling" Version="1.0.3" />
+    <PackageReference Include="HCF.Common.Foundation.FaultTolerance" Version="1.0.3" />
+    <PackageReference Include="HCF.Common.Foundation.ResponseObjects" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="2.1.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="2.6.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Scaffold.Api.Api.Models\Scaffold.Api.Api.Models.csproj" />
+    <ProjectReference Include="..\Scaffold.Api.Domain\Scaffold.Api.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

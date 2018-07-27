@@ -1,0 +1,13 @@
+{
+  "author": "Satya Yarlagadda",
+  "classifications": ["Web", "WebApi", "asp.net core"],
+  "name": "HCF Claims API Template",
+  "identity": "HCF.Claims.Scaffold.Api.Template",
+  "shortName": "hcfclaimsapi",
+  "tags": {
+      "language": "C#",
+      "framework": "asp.net core"
+  },
+  "sourceName": "HCF.Claims.Scaffold",
+  "preferNameDirectory": "true"
+}
